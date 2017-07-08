@@ -1,4 +1,7 @@
 ﻿using GangOfFourDesignPatterns.Behavioral.Observer;
+using GangOfFourDesignPatterns.Behavioral.State;
+using GangOfFourDesignPatterns.Behavioral.Strategy;
+using GangOfFourDesignPatterns.Behavioral.TemplateMethod;
 using GangOfFourDesignPatterns.Creational.FactoryMethod;
 using GangOfFourDesignPatterns.Creational.Singleton;
 using GangOfFourDesignPatterns.Structural.Adapter;
@@ -43,6 +46,14 @@ namespace GangOfFourDesignPatterns
             var testObserver = new _TestObserver();
             testObserver.Run(i++);
 
+            var testTemplateMethod = new _TestTemplateMethod();
+            testTemplateMethod.Run(i++);
+
+            var testStrategy = new _TestStrategy();
+            testStrategy.Run(i++);
+
+            var testState = new _TestState();
+            testState.Run(i++);
 
             Console.Read();
         }
